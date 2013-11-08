@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mopify - Mopidy webclient by dirkgroenen</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mopify - Mopidy webclient</h1>
+        <p>A mopidy webclient based on the Spotify webbased interface</p>
+
+        <p class="view"><a href="https://github.com/dirkgroenen/Mopify">View the Project on GitHub <small>dirkgroenen/Mopify</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/dirkgroenen/Mopify/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/dirkgroenen/Mopify/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/dirkgroenen/Mopify">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="mopify" class="anchor" href="#mopify"><span class="octicon octicon-link"></span></a>Mopify</h1>
+
+<p>A mopidy webclient based on the Spotify webbased interface. If you use Mopidy in combination with local music this client probably won't work.
+This client uses the Spotify API to speed up searching and artist/ablum lookup.</p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Search and album/artist lookup using the Spotify API</li>
+<li>Album cover caching</li>
+<li>Logic user interface based on the <a href="http://play.spotify.com">Spotfiy web player</a>
+</li>
+</ul><h2>
+<a name="quick-install" class="anchor" href="#quick-install"><span class="octicon octicon-link"></span></a>Quick install</h2>
+
+<p>Download the Mopify master repository, unzip it and drop it (you can remove the Screenshots folder) somewhere on your Mopify System.  Then change the <a href="http://docs.mopidy.com/en/latest/config/">settings of Mopidy</a> to make it work. </p>
+
+<p>Example (assuming the Mopify client is in /var/www/mopify):</p>
+
+<pre lang="code"><code>[http]
+enabled = true
+hostname = [your server ip]
+port = 6680
+static_dir = /var/www/mopify
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>After you installed the Mopidy client you can use a modern browser (like Firefox or Chrome) to open it (Using your server IP and Mopidy port. For example: <a>192.168.1.2:6680</a>. The first time you start the client it will ask for a <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">two-letter language code</a>. We need this code to provide better search results, since we are using the Spotify API.</p>
+
+<h2>
+<a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<p><img src="https://raw.github.com/dirkgroenen/Mopify/master/Screenshots/albumlookup.png" alt="ScreenShot"><img src="https://raw.github.com/dirkgroenen/Mopify/master/Screenshots/artistlookup.png" alt="ScreenShot"><img src="https://raw.github.com/dirkgroenen/Mopify/master/Screenshots/playlists.png" alt="ScreenShot"><img src="https://raw.github.com/dirkgroenen/Mopify/master/Screenshots/search.png" alt="ScreenShot"></p>
+
+<h2>
+<a name="security" class="anchor" href="#security"><span class="octicon octicon-link"></span></a>Security</h2>
+
+<p>(Note from Mopidy:) Note that the HTTP frontend does not feature any form of user authentication or authorization. Anyone able to access the web server can use the full core API of Mopidy. Thus, you probably only want to make the web server available from your local network or place it behind a web proxy which takes care or user authentication. You have been warned.</p>
+
+<h2>
+<a name="known-bugstodo" class="anchor" href="#known-bugstodo"><span class="octicon octicon-link"></span></a>Known bugs/TODO</h2>
+
+<ul>
+<li>Better Cache system to improve load time on the Artist and Album pages.</li>
+<li>Right click to add tracks to the current tracklist</li>
+<li>Create/Modify playlists</li>
+<li>Add keyboard support</li>
+<li>Not all music returned by the Spotify API is playable. This has something the do with countries and shit like that.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/dirkgroenen">dirkgroenen</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-45574670-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>

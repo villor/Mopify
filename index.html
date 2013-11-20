@@ -22,7 +22,7 @@
 		<script type="text/javascript" src="/js/browse.js"></script>
 		<script type="text/javascript" src="/js/search.js"></script>
 		<script type="text/javascript" src="/js/keyboard.js"></script>
-		<script type="text/javascript" src="/js/radio.js"></script> 
+		<script type="text/javascript" src="/js/radio.js"></script>
 		
 	</head>
 	
@@ -178,6 +178,14 @@
 									<div id='radioname'>Radio playlist for<br/><div class='dynamic'>2013-shortlist</div></div>
 									<div id='newradio'>
 										<div class='button'>Start new radio playlist</div>
+										<div id="searchwindow">
+											<div id="bar">
+												<input type="text" name="query" id="query" placeholder="Search"><div id='loader'><img src='/images/ajax-loader.gif'/></div>
+											</div>
+											<div id="results">
+												<table></table>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div id="controls">
@@ -187,8 +195,8 @@
 									</div>
 									<div id="nexttrack"></div>
 									<div id='metainfo'>
-										<div class='title'>Island in the sun</div>
-										<div class='artist'>Weezer</div>
+										<div class='title'></div>
+										<div class='artist'></div>
 									</div>
 									<div id='thumbwrap'>
 										<div class='thumb' id='thumbdown' data-rate='positive'></div>

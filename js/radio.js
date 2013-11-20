@@ -107,12 +107,7 @@ mopidy.on("state:online",function(){
 	// Build the radio object
 	var radio = new mopifyRadio();
 	
-	if(radio.currentPlaylist() == false){
-		radio.createFromArtist('Coldplay');
-	}
-	else{
-		radio.createFromArtist('Coldplay');
-	}
+	//radio.createFromArtist('Coldplay');
 	
 	// Add listeners to buttons
 	$("#radio #topbar #controls #nexttrack").click(function(){

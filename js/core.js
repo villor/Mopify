@@ -301,6 +301,8 @@ function showPage(page){
 	
 	$(".menu li a").removeClass('active');
 	$(".menu li a[href='#"+page+"']").addClass('active');
+
+	$("#searchwindow").removeClass('open');
 }
 
 // Open the metapage (artists and albums). The functions are placed in the metapagebuilder.js file
